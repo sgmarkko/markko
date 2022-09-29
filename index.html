@@ -1,12 +1,364 @@
-<html>
-<head>
-  <title>I am Mark Ko</title>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mark's Portfolio Site</title>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+       <style>
+           
+           @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap');   
+
+           .navbar-brand{
+               color: #424874;
+               font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+           }
+           
+           h1{
+            color: #424874;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+        }
+           
+           .btn-primary{
+               background-color: #424874;
+               border-color: #424874
+           }
+           
+     h3{
+            font-weight: bold;
+            font-size: 25px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        p{
+            color: #777;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        a{
+            color: #333;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .card-title{
+            font-weight: bold;
+        }
+        
+        .margin-height{
+            margin: 100px auto 100px auto;
+        }
+        
+        .main{
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        
+        .heading{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        @media (min-width: 480px) {
+        
+            .profile{
+                width: 40%;
+                height: auto;
+            }
+            .main{
+            margin-top: 20px;
+            margin-bottom: 100px;
+        }        
+        
+        
+        @media (min-width: 576px) {
+        
+            .profile{
+                width: 60%;
+                height: auto;
+            }
+            .main{
+            margin-top: 20px;
+            margin-bottom: 100px;
+        }
+            
+        }
+        @media (min-width: 768px) {
+            .profile{
+                width: 50%;
+                height: auto;
+            }
+                    .main{
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+        }
+        @media (min-width: 992px) {
+            .profile{
+                width: 80%;
+                height: auto;
+            }
+            .main{
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        }
+            
+            .btn{
+                margin-bottom: 20px;
+            }
+            
+            .navbar-nav li a{
+                color: #424874;
+                font-family: 'Montserrat', sans-serif;
+
+            }
+            
+
+            
+            .navbar {
+                  box-shadow: 0px 0px 20px #777777;
+
+
+            }
+      
+    </style>
+    
+  </head>
+  <body>
+<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mark's Portfolio Site</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+          <a class="nav-link" href="#intro">Intro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#writing">Writing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#video">Video</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#webdesign">Web Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#initiatives">Other Initiatives</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>    
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+   <div class="container margin-height" id="intro">
+   <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-4">
+          <img src="./images/markko.png" class="img-fluid profile" style="padding-top: 50px;">
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-8 main">
+          <h1 style="padding-bottom: 24px;">Hello, I'm Mark</h1>
+          <p style="padding-bottom: 18px;">I am a communications specialist with about ten years of experience. Of the ten years, I spent seven years in corporate/marketing communications and in the recent three years in internal communications and change management. More about my experiences can be found in my resume. Talk to you soon!</p>
+          <a href="./files/Resume%20of%20Mark%20Ko.pdf" target="_blank"><button type="button" class="btn btn-primary btn-lg">Download resume &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+</svg></button></a>
+
+      </div>
+       
+   </div>
+      </div>
+      </div>
+      <div class="container-fluid" style="background-color: #FAFAFA; padding: 100px 0px 100px 0px;">
+<div class="container" id="writing">
+   <div class="row">
+           <div class="col-lg-12">
+          <h1>Writing Portfolio</h1>
+      </div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="./images/1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title" style="padding-bottom: 24px;">Let's make a point to keep InTouch</h3>
+          <a href="./files/Resume%20of%20Mark%20Ko.pdf" target="_blank"><button type="button" class="btn btn-primary btn-lg">Read more</button></a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./images/2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title" style="padding-bottom: 24px;">Cybersecurity and ESG</h3>
+          <a href="./files/Resume%20of%20Mark%20Ko.pdf" target="_blank"><button type="button" class="btn btn-primary btn-lg">Read more</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./images/3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title" style="padding-bottom: 24px;">Your GIC @WORK app just got better!</h3>
+          <a href="./files/Resume%20of%20Mark%20Ko.pdf" target="_blank"><button type="button" class="btn btn-primary btn-lg">Read more</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="row">
+      <div class="col-lg-12">
+          <a href="#"><h4 style="text-align: right; padding-top: 50px;">View all <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg></h4></a>
+      </div>
+  </div>
+   </div>
+</div>
+      </div>
+      
+      <div class="container-fluid">
+   <div class="container" id="video">
+   <div class="row main">
+       <div class="col-lg-12">
+           <h1 class="heading">Video portfolio</h1>
+       </div>  
+       <div class="col-lg-8">
+<div class="embed-responsive embed-responsive-16by9">
+<iframe style="width: 100%; height: 400px;" src="https://www.youtube.com/embed/idw9AyaIb-A"></iframe>
+</div>
+           </div>
+
+       <div class="col-lg-4">
+           <div class="card" style="width: 100%;">
+  <div class="card-header" style="background-color: #424874; color: #FFF;">
+    <h3>Playlist</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><a href="https://www.youtube.com/watch?v=JBg-pftmpIM" target="_blank">NNI Parkinson Home Care Training and Support Programme
+</a></li>
+    <li class="list-group-item"><a href="https://www.youtube.com/watch?v=QAbS0OkzaDY">How to draw a magnifying glass using Illustrator</a></li>
+    <li class="list-group-item"><a href="https://www.youtube.com/watch?v=kOihe7aeiIQ">Health Digest: Parkinson's Disease
+</a></li>
+     <li class="list-group-item"><a href="https://www.youtube.com/watch?v=uLYaDrZSdhg
+">Unboxing of the DJI OM5</a></li>
  
-<body>
-  <h1>Mark Ko</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+      <li class="list-group-item"><a href="https://www.youtube.com/watch?v=9ucLHQNYCMY
+">Unboxing and first impression of the Philips Fresh Air Mask ACM066
+</a></li>
  
+  </ul>
+</div>
+       </div>
+   </div>
+    </div>
+     
+      <div class="container-fluid" style="background-color: #FAFAFA; padding: 100px 0px 100px 0px;">
+<div class="container" id="webdesign">
+   <div class="row">
+           <div class="col-lg-12">
+          <h1>Web Design Portfolio</h1>
+      </div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="./images/web.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title" style="padding-bottom: 24px;">Genesis Bank Trust</h3>
+          <a href="https://www.genesisbanktrust.com" target="_blank"><button type="button" class="btn btn-primary btn-lg">Visit now</button></a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./images/web2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title" style="padding-bottom: 24px;">T3 Progress Report</h3>
+          <a href="#" target="_blank"><button type="button" class="btn btn-primary btn-lg">Visit now</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./images/web3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title" style="padding-bottom: 24px;">TG Website</h3>
+          <a href="#" target="_blank"><button type="button" class="btn btn-primary btn-lg">Visit now</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+   </div>
+</div>
+      </div>
+     
+     
+      <div class="container-fluid">
+  <div class="container" id="initiatives">
+      <div class="row main">
+          <div class="col-lg-12">
+              <h1 class="heading">Side Projects</h1>
+          </div>
+          
+          <div class="col-lg-6">
+             <div class="card mb-3">
+  <img class="card-img-top" src="./images/4.jpg" alt="Card image cap">
+  <div class="card-body">
+        <h3 class="card-title" style="padding-bottom: 24px;">techcoffeehouse.com</h3>
+    <p class="card-text">This is a tech news website that I created in 2017. It started out as a sandbox for me to learn about Search Engine Optimisation. It gradually turned into one of the most searchable tech news sites in Singapore with an average pageviews of >150,000/year. </p>
+      <a href="https://www.techcoffeehouse.com" target="_blank"><button type="button" class="btn btn-primary">Have a look</button></a>
+
+  </div>
+</div>
+
+          </div>
+          <div class="col-lg-6">
+             <div class="card mb-3">
+  <img class="card-img-top" src="./images/5.jpg" alt="Card image cap">
+  <div class="card-body">
+        <h3 class="card-title" style="padding-bottom: 24px;">entree.sg</h3>
+      <p class="card-text">entree.sg was created to feature inspirational stories of entrepreneurs and self-starters for people who aspire to take the alternative path to career success. They include start-up founders, student-founders and YouTubers.<br/><br/></p>
+      <a href="https://www.entreesg.wordpress.com" target="_blank"><button type="button" class="btn btn-primary">Have a look</button></a><br/>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+      </div>
+      </div>
+      
+ <div class="container-fluid" id="contact" style="background-color: #FAFAFA; padding: 10px 0px 10px 0px;">
+
+  <footer class="py-3 my-4">
+    <p class="text-center text-muted">© Mark Ko | <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-phone-vibrate" viewBox="0 0 16 16">
+  <path d="M10 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4zM6 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6z"/>
+  <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM1.599 4.058a.5.5 0 0 1 .208.676A6.967 6.967 0 0 0 1 8c0 1.18.292 2.292.807 3.266a.5.5 0 0 1-.884.468A7.968 7.968 0 0 1 0 8c0-1.347.334-2.619.923-3.734a.5.5 0 0 1 .676-.208zm12.802 0a.5.5 0 0 1 .676.208A7.967 7.967 0 0 1 16 8a7.967 7.967 0 0 1-.923 3.734.5.5 0 0 1-.884-.468A6.967 6.967 0 0 0 15 8c0-1.18-.292-2.292-.807-3.266a.5.5 0 0 1 .208-.676zM3.057 5.534a.5.5 0 0 1 .284.648A4.986 4.986 0 0 0 3 8c0 .642.12 1.255.34 1.818a.5.5 0 1 1-.93.364A5.986 5.986 0 0 1 2 8c0-.769.145-1.505.41-2.182a.5.5 0 0 1 .647-.284zm9.886 0a.5.5 0 0 1 .648.284C13.855 6.495 14 7.231 14 8c0 .769-.145 1.505-.41 2.182a.5.5 0 0 1-.93-.364C12.88 9.255 13 8.642 13 8c0-.642-.12-1.255-.34-1.818a.5.5 0 0 1 .283-.648z"/>
+</svg> <a href="tel:9172 0898">+65 9172 0898</a> | <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16">
+  <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+  <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+</svg> <a href="sgmarkko@gmail.com">sgmarkko[at]gmail.com</a></p>
+  </footer>
+</div>
+  </body>
+<!--script-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+<!--script-->
+
 </html>
